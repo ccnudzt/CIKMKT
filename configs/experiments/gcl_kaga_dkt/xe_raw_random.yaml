@@ -1,0 +1,17 @@
+inherits:
+  - ../../base/runtime.yaml
+  - ../../base/trainer.yaml
+  - ../../datasets/xe_raw_graph.yaml
+  - ../../models/gcl_kaga_dkt_random.yaml
+
+runtime:
+  experiment_name: gcl_kaga_dkt_xe_raw_random
+
+trainer:
+  batch_size: 512
+  num_epochs: 30
+  lr: 0.01
+  eta_min: 0.000001
+  patience: 5
+  min_delta: 0.0001
+  aux_loss_weight: 0.3

@@ -1,0 +1,9 @@
+trainer:
+  name: sequence
+  batch_size: 1024
+  num_epochs: 30
+  lr: 0.1
+  weight_decay: 0.0
+  eta_min: 0.00001
+  patience: 5
+  min_delta: 0.001

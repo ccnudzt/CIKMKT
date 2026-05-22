@@ -1,0 +1,15 @@
+runtime:
+  device: auto
+  seed: 42
+  output_dir: outputs
+  save_last: true
+  num_workers: 0
+
+eval:
+  save_best_by: val_auc
+  best_mode: max
+
+artifacts:
+  cache_dir: cache
+  log_dir: logs
+  checkpoint_dir: outputs

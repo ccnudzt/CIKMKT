@@ -1,0 +1,20 @@
+data_params:
+  min_len: 3
+  max_len: 200
+
+model_params:
+  embed_dim: 16
+  hidden_dim: 32
+
+exp_params:
+  device: "auto"       # Resolve to cuda/cpu dynamically in main.py
+  batch_size: 1024
+  num_epochs: 30
+  lr: 0.1
+  seed: 42
+  num_folds: 5
+  patience: 5          # stop if no improvement for N epochs
+  min_delta: 0.001    # minimum change to qualify as improvement
+  ckpt_dir: "checkpoints"
+  save_last: true
+  eta_min: 0.00001    # min lr for cosine annealing

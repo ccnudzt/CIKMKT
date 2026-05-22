@@ -1,0 +1,13 @@
+model:
+  name: gcl_kaga_dkt
+  embed_dim: 32
+  hidden_dim: 32
+  g_layers: 2
+  g_dropout: 0.1
+  g_aggr: mean
+  gcl:
+    enabled: true
+    drop_scheme: random
+    temperature: 0.2
+    drop_edge_rate: 0.3
+    mask_feat_rate: 0.1

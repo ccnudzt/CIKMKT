@@ -1,0 +1,9 @@
+data:
+  builder: graph_kt
+  dataset_name: mooc_raw
+  recordings_path: data/mooc_raw/recordings.jsonl
+  eid2sid_path: data/mooc_raw/eid2sid.json
+  min_len: 5
+  max_len: 200
+  num_folds: 5
+  r_pad: 0

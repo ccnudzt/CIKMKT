@@ -1,0 +1,13 @@
+model:
+  name: cog_dkt
+  embed_dim: 128
+  hidden_dim: 256
+  freeze_q_embed: true
+  text_encoder:
+    enabled: true
+    provider: transformers
+    model_path: ~/model_weights/Qwen-Embedding/Qwen3-Embedding-0.6B/
+    batch_size: 128
+    max_length: 512
+    agg: mean
+    device: cpu

@@ -1,0 +1,16 @@
+inherits:
+  - ../../base/runtime.yaml
+  - ../../base/trainer.yaml
+  - ../../datasets/xe_raw_graph.yaml
+  - ../../models/kaga_dkt.yaml
+
+runtime:
+  experiment_name: kaga_dkt_xe_raw
+
+trainer:
+  batch_size: 1024
+  num_epochs: 30
+  lr: 0.01
+  eta_min: 0.000001
+  patience: 5
+  min_delta: 0.0001

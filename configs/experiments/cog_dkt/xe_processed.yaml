@@ -1,0 +1,16 @@
+inherits:
+  - ../../base/runtime.yaml
+  - ../../base/trainer.yaml
+  - ../../datasets/xe_processed.yaml
+  - ../../models/cog_dkt.yaml
+
+runtime:
+  experiment_name: cog_dkt_xe_processed
+
+trainer:
+  batch_size: 512
+  num_epochs: 100
+  lr: 0.01
+  eta_min: 0.000001
+  patience: 10
+  min_delta: 0.0001

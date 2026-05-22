@@ -1,0 +1,9 @@
+data:
+  builder: kt
+  dataset_name: mooc_processed
+  records_path: data/mooc_processed/records.txt
+  qid2cog_path: data/mooc_processed/qid2cog.jsonl
+  min_len: 3
+  max_len: 200
+  num_folds: 5
+  r_pad: 2

@@ -1,0 +1,7 @@
+model:
+  name: kaga_dkt
+  embed_dim: 32
+  hidden_dim: 32
+  g_layers: 2
+  g_dropout: 0.1
+  g_aggr: mean

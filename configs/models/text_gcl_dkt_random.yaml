@@ -1,0 +1,21 @@
+model:
+  name: text_gcl_dkt
+  embed_dim: 128
+  hidden_dim: 128
+  g_layers: 2
+  g_dropout: 0.1
+  g_aggr: mean
+  text_encoder:
+    provider: transformers
+    model_path: ~/model_weights/Qwen-Embedding/Qwen3-Embedding-0.6B/
+    batch_size: 128
+    max_length: 256
+    embed_dim: 128
+    device: cpu
+    seed: 17
+  gcl:
+    enabled: true
+    drop_scheme: random
+    temperature: 0.2
+    drop_edge_rate: 0.3
+    mask_feat_rate: 0.1

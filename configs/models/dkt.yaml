@@ -1,0 +1,7 @@
+model:
+  name: dkt
+  embed_dim: 16
+  hidden_dim: 32
+  freeze_q_embed: true
+  text_encoder:
+    enabled: false

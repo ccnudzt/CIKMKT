@@ -1,0 +1,11 @@
+data:
+  builder: text_graph_kt
+  dataset_name: xe_raw_text
+  recordings_path: data/xe_raw/recordings.jsonl
+  eid2sid_path: data/xe_raw/eid2sid.json
+  eid2desc_path: data/xe_raw/eid2desc.json
+  sid2desc_path: data/xe_raw/sid2desc.json
+  min_len: 5
+  max_len: 200
+  num_folds: 5
+  r_pad: 0

@@ -1,0 +1,8 @@
+inherits:
+  - ../../base/runtime.yaml
+  - ../../base/trainer.yaml
+  - ../../datasets/xe_processed.yaml
+  - ../../models/dkt.yaml
+
+runtime:
+  experiment_name: dkt_xe_processed
